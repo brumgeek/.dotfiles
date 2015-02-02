@@ -1,0 +1,43 @@
+# zsh alias file
+
+#Vagrant
+alias vs="vagrant ssh"
+alias vu="vagrant up"
+alias vd="vagrant halt"
+alias vg="vagrant global-status"
+
+
+#---------------------------------------------------------
+# Linux Alias
+#---------------------------------------------------------
+if [[ $IS_LINUX -eq 1 ]]; then
+  alias -s php=vim
+  alias -s html=vim
+  alias -s css=vim
+  alias -s js=vim
+  alias -s txt=vim
+  alias -s pdf=zathura
+  alias -s png=feh
+  alias -s jpg=feh
+  alias -s jpeg=feh
+  alias pbcopy="xclip -selection clipboard"
+  alias pbpaste="xclip -selection clipboard -o"
+fi
+
+#---------------------------------------------------------
+# OSX Alias
+#---------------------------------------------------------
+if [[ $IS_LINUX -eq 1 ]]; then
+  # Do Stuff
+fi
+
+#---------------------------------------------------------
+#  ALL
+#---------------------------------------------------------
+
+# Recursively delete `.DS_Store` files
+alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
+
+# Wake cube server
+alias cube="sudo wakeonlan 9c:b6:54:07:d4:0c"
+
