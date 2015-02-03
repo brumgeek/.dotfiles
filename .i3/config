@@ -18,7 +18,7 @@ exec vmware-user
 exec --no-startup-id unclutter -root -visable
 
 # Dropbox
-exec dropbox start
+exec --no-startup-id dropbox start
 
 # Load a Background Wallpaper
 exec --no-startup-id feh --bg-scale  ~/Pictures/Wallpaper/ex_machina_2015_movie-2560x1440.jpg
@@ -190,6 +190,7 @@ new_window 1pixel
 # custom window settings
 for_window [class="^Google-chrome$"] border 1pixel
 for_window [class="feh"] border 1pixel floating enabled
+for_window [class="Pidgin"] border 1pixel floating enabled
 #for_window [class="^chromium-browser$"] border 1pixel
 #
 
